@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherVault | Cyber Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h2>🔐 CipherVault</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#encrypt">Encrypt</a>
+        <a href="#crack">Crack Code</a>
+        <a href="#missions">Missions</a>
+    </nav>
+</header>
+
+<section id="home">
+    <p class="tag">CYBERSECURITY LAB // SYSTEM ONLINE</p>
+    <h1>WELCOME TO THE <span>SECRET WORLD</span></h1>
+    <p>Encrypt messages. Crack secret codes. Test your skills.</p>
+    <a href="#encrypt" class="btn">ENTER THE LAB</a>
+</section>
+
+<section id="encrypt">
+    <h2>01 // MESSAGE ENCRYPTION</h2>
+    <textarea id="message" placeholder="Enter your secret message..."></textarea>
+    <input type="number" id="key" min="1" max="25" value="3">
+    <button id="encryptBtn">ENCRYPT</button>
+    <button id="decryptBtn">DECRYPT</button>
+    <textarea id="result" placeholder="Your result..." readonly></textarea>
+</section>
+
+<section id="crack">
+    <h2>02 // BRUTE FORCE LAB</h2>
+    <p>Try all possible Caesar Cipher keys to crack a message.</p>
+    <textarea id="crackMessage" placeholder="Enter encrypted text..."></textarea>
+    <button id="crackBtn">CRACK MESSAGE</button>
+    <div id="crackResults"></div>
+</section>
+
+<section id="missions">
+    <h2>03 // SECRET MISSIONS</h2>
+    <p>MISSION 001: Decode the secret message.</p>
+    <h3>KHOOR ZRUOG</h3>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button id="checkBtn">SUBMIT ANSWER</button>
+    <p id="feedback"></p>
+</section>
+
+<footer>
+    CIPHERVAULT © 2026 | CYBER LAB
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050b14;
+    color: #e0f7ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #091522;
+    border-bottom: 1px solid #00cfff;
+}
+
+header h2, span {
+    color: #00d9ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+#home {
+    min-height: 420px;
+    padding-top: 120px;
+}
+
+.tag {
+    color: #00d9ff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #00d9ff;
+    margin-bottom: 25px;
+}
+
+section p {
+    margin-bottom: 20px;
+    color: #a9bdcc;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #00cfff;
+    color: #04101b;
+    border: none;
+    padding: 12px 22px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background: white;
+    box-shadow: 0 0 15px #00cfff;
+}
+
+textarea, input {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #101e2d;
+    color: #00e5ff;
+    border: 1px solid #087c9a;
+    border-radius: 6px;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#encrypt, #crack, #missions {
+    border-top: 1px solid #15364a;
+}
+
+#crackResults {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: left;
+    color: #00e5ff;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+#feedback {
+    color: #00ff9c;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #091522;
+    color: #00d9ff;
+    border-top: 1px solid #00cfff;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
